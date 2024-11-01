@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import Link from "next/link";
 import styled from "styled-components";
 
 export const Container = styled.main`
@@ -17,6 +18,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 
+gap: 105px;
+
 padding: 28px 120px;
 
 &::after{
@@ -29,13 +32,26 @@ padding: 28px 120px;
 
     background-color: ${({ theme }) => theme["gray-300"]}
 }
+
+@media (max-width: 1024px){
+    padding: 28px 60px;
+    gap: 60px;
+}
+
+@media (max-width: 640px){
+    padding: 18px 16px;
+    flex-direction: column;
+}
 `
 
 export const ImageMain = styled(Image)`
-width: 456px;
-height: 456px;
+max-width: 456px;
+height: 100%;
 
-margin-right: 105px;
+@media (max-width: 1024px){
+    max-width: 300px;
+   
+}
 `
 
 export const ContainerText = styled.section`
@@ -44,11 +60,19 @@ max-width: 400px;
 
 export const Title = styled.h1`
 font-size: 8.2rem;
+
+@media (max-width: 1024px){
+    font-size: 6.2rem;
+}
 `
 
 export const Text = styled.p`
 font-size: 1.8rem;
 color: ${({ theme }) => theme["gray-700"]};
+
+@media (max-width: 1024px){
+    font-size: 1.4rem;
+}
 `
 
 export const SectionProject = styled.section`
@@ -60,6 +84,14 @@ align-items: center;
 justify-content: center;
 
 padding: 60px 120px;
+
+@media (max-width: 1024px){
+    padding: 60px;
+}
+
+@media (max-width: 640px){
+    padding: 24px 16px;
+}
 `
 
 export const TextProject = styled.h2`
@@ -83,19 +115,8 @@ export const TextProject = styled.h2`
     }
 `
 
-export const ListProject = styled.ul`
-width: 100%;
-
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 50px;
-
-margin-bottom: 62px;
-`
-
-export const ButtonProject = styled.button`
-border: 0;
+export const ButtonProject = styled(Link)`
+text-decoration: none;
 
 background-color: ${({ theme }) => theme["blue-500"]};
 padding: 5px 20px;

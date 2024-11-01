@@ -19,7 +19,7 @@ box-shadow: 0px 4px 4px  rgba(0, 0, 0, 0.25);
     padding: 10px 60px;
 }
 
-@media (max-width: 540px){
+@media (max-width: 640px){
     padding: 10px 16px;
 }
 `

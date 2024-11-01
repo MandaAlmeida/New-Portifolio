@@ -9,5 +9,6 @@ padding: 5px;
 `
 
 export const Text = styled.span`
+font-size: 1.2rem;
 color: ${({ theme }) => theme["gray-900"]};
 `

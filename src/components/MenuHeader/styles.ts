@@ -13,7 +13,7 @@ export const NavLink = styled.ul<MenuStyleProps>`
  gap: 20px;
  align-items: center;
 
- @media (max-width: 540px){
+ @media (max-width: 640px){
  ${({ $isActiveMenu, theme }) => $isActiveMenu ? css`
  position: fixed;
  top: 0;
@@ -44,7 +44,7 @@ export const CloseMenu = styled.button`
     background-color: transparent;
     border: none;
     text-align: end;
-    @media (max-width: 540px){
+    @media (max-width: 640px){
         width: 100%;
     }
 `
@@ -53,7 +53,7 @@ export const Icon = styled(List)`
     color: ${({ theme }) => theme["gray-100"]};
     font-size: 0;
 
-    @media (max-width: 540px){
+    @media (max-width: 640px){
         font-size: 3rem;
     }
 `
@@ -63,7 +63,7 @@ export const IconClose = styled(X) <MenuStyleProps>`
     color: ${({ theme }) => theme["gray-100"]};
     font-size: 0;
 
-    @media (max-width: 540px){
+    @media (max-width: 640px){
         font-size: ${({ $isActiveMenu }) => $isActiveMenu ? 3 : 0}rem;
     }
 `

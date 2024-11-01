@@ -14,11 +14,15 @@ border-radius: 10px;
 
 padding: 20px;
 
-flex: 1;
+width: 100%;
 max-height: 367px;
 
 &:hover{
     box-shadow:  0px 4px 8px 0px rgba(0, 0, 0, 0.2)
+}
+
+@media (max-width: 640px){
+    width: 90%;
 }
 `
 
@@ -39,6 +43,8 @@ export const ListLanguage = styled.ul`
 display: flex;
 align-items: center;
 justify-content: start;
+
+flex-wrap: wrap;
 
 gap: 10px;
 `
