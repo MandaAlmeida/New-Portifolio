@@ -16,7 +16,7 @@ export function CardProject({ image, title, text }: CardProjetType) {
             <ImageProject src={image} alt="imagem do projeto" />
             <TitleProject>{title}</TitleProject>
             <ListLanguage>
-                {text.map((text) => <CardLanguage text={text} />)}
+                {text.map((text) => <CardLanguage key={text.length} text={text} />)}
             </ListLanguage>
         </Container>
     )

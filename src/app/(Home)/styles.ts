@@ -20,7 +20,7 @@ justify-content: center;
 
 gap: 105px;
 
-padding: 28px 120px;
+padding: 70px 120px;
 
 &::after{
     content: "";
