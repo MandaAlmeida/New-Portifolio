@@ -1,6 +1,7 @@
-import { ImageMain } from "../styles";
-import { Container, Section, SectionText, Title, Text } from "./styles";
+import { Skills } from "@/components/Skills";
+import { Container, Section, SectionText, ImageMain, Title, Text, SectionSkills } from "./styles";
 import ImageHome from "@/assets/ImageHome.png"
+import { GrupSkills } from "@/utils/skills";
 
 
 export default function About() {
@@ -31,6 +32,12 @@ export default function About() {
 
             <Section >
                 <Title>Minhas habilidades</Title>
+                <SectionSkills>
+                    {GrupSkills.map(skill => (
+                        <Skills key={skill.key} img={skill.img} text={skill.text} />
+                    ))}
+                </ SectionSkills>
+
             </Section>
         </Container >
     )
