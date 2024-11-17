@@ -2,7 +2,7 @@ import { Skills } from "@/components/Skills";
 import { Container, Section, SectionText, ImageMain, Title, Text, SectionSkills, List } from "./styles";
 import { GrupSkills } from "@/dados/skills";
 
-import Eu from "@/assets/Amanda.png";
+import Eu from "@/assets/amanda.png";
 import hobbies from "@/assets/hobbies.png";
 
 

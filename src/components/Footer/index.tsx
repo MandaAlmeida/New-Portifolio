@@ -1,4 +1,3 @@
-import { CreateLink } from "../CreateLink";
 import { SocialMedia } from "../SocialMedia";
 import { Container, Text } from "./styles";
 

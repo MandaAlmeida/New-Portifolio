@@ -8,7 +8,7 @@ type Props = LinkProps & LinkTypeStyleProps & {
    text: string;
 }
 
-export function CreateLink({ text, type = "PRIMARY", $isActive = false, ...rest }: Props) {
+export function CreateLink({ text, type = "PRIMARY", ...rest }: Props) {
    const [activePage, setActivePage] = useState(false)
    const pathname = usePathname()
 

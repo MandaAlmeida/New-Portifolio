@@ -2,7 +2,7 @@ import { ColorTypeStyleProps, Container, LinkList, LinkTypeStyleProps, List, Log
 
 import github from "@/assets/github.png"
 import linkedin from "@/assets/linkedin.png"
-import Whatsapp from "@/assets/whatsapp.png"
+import Whatsapp from "@/assets/whatsApp.png"
 import Instagram from "@/assets/instagram.png"
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
     color?: ColorTypeStyleProps;
 }
 
-export function SocialMedia({ type = "PRIMARY", color }: Props) {
+export function SocialMedia({ type = "PRIMARY" }: Props) {
     return (
         <Container type={type}>
             <List type={type}>

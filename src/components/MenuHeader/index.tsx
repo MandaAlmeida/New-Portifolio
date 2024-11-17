@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { NavLink, Icon, ButtonMenu, CloseMenu, IconClose } from "./styles";
 import { CreateLink } from "@/components/CreateLink";
-import { usePathname } from 'next/navigation'
-
 
 export function MenuHeader() {
     const [activeMenu, setActiveMenu] = useState(false)

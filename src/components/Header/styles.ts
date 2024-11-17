@@ -2,11 +2,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 
-export type HeaderFixed = {
-    $isActive?: boolean
-}
-
-export const Container = styled.header<HeaderFixed>`
+export const Container = styled.header`
 position: sticky;
 top: 0;
 z-index: 100;
