@@ -9,7 +9,7 @@ export function Email() {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
-    function sendEmail(e: any) {
+    function sendEmail(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         if (name === "" || email === "" || message === "") {
             alert("Preencha todos os campos");
