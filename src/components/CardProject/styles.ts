@@ -1,13 +1,21 @@
 "use client"
 import styled from "styled-components";
 import Image from "next/image";
+import Link from "next/link";
+
+export type ButtonTypeStyleProps = "PRIMARY" | "SECONDARY"
+
+type Props = {
+    type?: ButtonTypeStyleProps
+}
 
 export const Container = styled.li`
+cursor: pointer;
+
+
 display: flex;
 flex-direction: column;
-gap: 20px;
-
-cursor: pointer;
+gap: 15px;
 
 box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2);
 border-radius: 10px;
@@ -29,7 +37,7 @@ max-height: 367px;
 
 export const ImageProject = styled(Image)`
     width: 100%;
-    max-height: 200px;
+    max-height: 180px;
     object-fit: cover;
     border-radius: 10px;
 `
@@ -38,6 +46,11 @@ export const TitleProject = styled.h4`
    font-size: 2rem;
    font-weight: 400;
     color: ${({ theme }) => theme["gray-900"]};
+`
+export const Section = styled.section`
+display: flex;
+align-items: center;
+justify-content: space-between;
 `
 
 export const ListLanguage = styled.ul`
@@ -48,4 +61,28 @@ justify-content: start;
 flex-wrap: wrap;
 
 gap: 10px;
+`
+
+export const Button = styled(Link) <Props>`
+    text-decoration: none;
+
+    background-color: ${({ theme, type }) => type === "PRIMARY" ? theme["blue-500"] : "transpatent"};
+
+    padding: 5px;
+
+    
+    border-radius: 10px;
+    
+    text-align: center;
+    
+    font-size: 1.6rem;
+    color: ${({ theme, type }) => type === "PRIMARY" ? theme["gray-100"] : theme["gray-800"]};
+
+    border: solid transparent ;
+    border-width: ${({ type }) => type === "SECONDARY" ? 1 : 0}px;
+
+    &:hover{
+        background-color: ${({ theme, type }) => type === "PRIMARY" ? theme["blue-700"] : "transparent"};
+        border-color: ${({ theme, type }) => type === "PRIMARY" ? theme["gray-100"] : theme["gray-800"]};
+}
 `

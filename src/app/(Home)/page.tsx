@@ -1,6 +1,6 @@
 import { ListProject } from "@/components/ListProject";
 import { GrupProjects } from "@/dados/projects";
-import ImageHome from "@/assets/projetos/imageHome.png";
+import Image from "@/assets/image.png";
 
 import { Container, ImageMain, Title, Text, ContainerText, SectionInitial, SectionProject, TextProject, ButtonProject } from "./styles";
 
@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <Container>
             <SectionInitial>
-                <ImageMain src={ImageHome} alt="imagem de uma menina programando em seu computador" />
+                <ImageMain src={Image} alt="imagem de uma menina programando em seu computador" />
                 <ContainerText>
                     <Title>&lt;coder&gt;</Title>
                     <Text>Desenvolvedor front-end que transforma designs em interfaces dinâmicas, intuitivas e responsivas, com código limpo e performance otimizada.</Text>

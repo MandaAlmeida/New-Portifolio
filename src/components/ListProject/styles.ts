@@ -21,4 +21,8 @@ margin-bottom: 62px;
 @media (max-width: 640px) {
     grid-template-columns: 1fr; 
 }
+
+li{
+    list-style: none;
+}
 `

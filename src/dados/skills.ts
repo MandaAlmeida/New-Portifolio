@@ -17,29 +17,31 @@ type SkillType = {
 };
 
 export const GrupSkills: SkillType[] = [
+
     {
         key: "1",
-        text: 'Git',
-        img: Git
+        text: 'JavaScript',
+        img: javascript
     },
     {
         key: "2",
-        text: 'JavaScript',
-        img: javascript
+        text: 'TypeScript',
+        img: typescript
     },
     {
         key: "3",
         text: 'Next.js',
         img: nextjs
     },
+
     {
         key: "4",
-        text: 'Node.js',
-        img: node
+        text: 'React',
+        img: react
     },
     {
         key: "5",
-        text: 'React',
+        text: 'React Native',
         img: react
     },
     {
@@ -59,7 +61,12 @@ export const GrupSkills: SkillType[] = [
     },
     {
         key: "9",
-        text: 'TypeScript',
-        img: typescript
-    }
+        text: 'Git',
+        img: Git
+    },
+    {
+        key: "10",
+        text: 'Node.js',
+        img: node
+    },
 ];
