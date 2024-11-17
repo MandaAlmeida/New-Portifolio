@@ -10,7 +10,7 @@ export function ListProject({ items }: ListProjectProps) {
     return (
         <List>
             {items && items.length > 0 ? (
-                items.map(item => <CardProject key={item.id} id={item.id} image={item.image} text={item.text} title={item.title} />)
+                items.map(item => <CardProject key={item.key} img={item.img} text={item.text} title={item.title} />)
             ) : (
                 <p>Nenhum item disponível</p>
             )}

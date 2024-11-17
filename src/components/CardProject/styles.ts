@@ -1,6 +1,6 @@
 "use client"
 import styled from "styled-components";
-import Image from "next/image"
+import Image from "next/image";
 
 export const Container = styled.li`
 display: flex;
@@ -15,6 +15,7 @@ border-radius: 10px;
 padding: 20px;
 
 width: 100%;
+max-width: 373px;
 max-height: 367px;
 
 &:hover{

@@ -2,6 +2,7 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
+position: relative;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -21,5 +22,10 @@ padding: 0 120px;
 export const Title = styled.h1`
 margin: 50px 0;
 font-size: 4.8rem;
-color: ${({ theme }) => theme["gray-900"]}
+color: ${({ theme }) => theme["gray-900"]};
+
+@media (max-width: 640px){
+    font-size: 2.4rem;
+}
+
 `

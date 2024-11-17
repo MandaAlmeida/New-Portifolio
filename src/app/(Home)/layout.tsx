@@ -9,9 +9,11 @@ import { ThemeProvider } from "styled-components";
 export default function StoreLayout({ children }: { children: ReactNode }) {
   return (
     <ThemeProvider theme={defaultTheme}>
-        <Header/>
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
+      </div>
       <GlobalStyle />
     </ThemeProvider>
   );

@@ -1,9 +1,15 @@
-import { Container } from "./styles";
+import { SocialMedia } from "@/components/SocialMedia";
+import { Container, Title, Text, Section } from "./styles";
+import { Email } from "@/components/Email";
 
 export default function Contact() {
     return (
         <Container>
-            <h1>Contato</h1>
+            <Title>Contato</Title>
+            <Text>Entre em contato comigo através das redes sociais ou envie-me um e-mail.</Text>
+            <SocialMedia type="SECONDARY" />
+
+            <Email />
         </Container>
     )
 }

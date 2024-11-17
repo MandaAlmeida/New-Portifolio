@@ -8,6 +8,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+
+flex: 1;
 `
 
 export const SectionInitial = styled.section`
@@ -39,7 +41,7 @@ padding: 70px 120px;
 }
 
 @media (max-width: 640px){
-    padding: 18px 16px;
+    padding: 30px 24px;
     flex-direction: column;
 }
 `
@@ -50,19 +52,29 @@ height: 100%;
 
 @media (max-width: 1024px){
     max-width: 300px;
-   
+}
+
+@media (max-width: 640px){
+    max-width: 250px;
 }
 `
 
 export const ContainerText = styled.section`
 max-width: 400px;
+
+text-align: center;
 `
 
 export const Title = styled.h1`
 font-size: 8.2rem;
+margin-bottom: 10px;
 
 @media (max-width: 1024px){
-    font-size: 6.2rem;
+    font-size: 5.2rem;
+}
+
+@media (max-width: 640px){
+    font-size: 4.2rem;
 }
 `
 
@@ -72,6 +84,10 @@ color: ${({ theme }) => theme["gray-700"]};
 
 @media (max-width: 1024px){
     font-size: 1.4rem;
+}
+
+@media (max-width: 640px){
+    font-size: 1.2rem;
 }
 `
 
@@ -90,7 +106,7 @@ padding: 60px 120px;
 }
 
 @media (max-width: 640px){
-    padding: 24px 16px;
+    padding: 30px 16px;
 }
 `
 
@@ -113,6 +129,10 @@ export const TextProject = styled.h2`
 
     background-color: ${({ theme }) => theme["gray-300"]}
     }
+
+    @media (max-width: 640px){
+    font-size: 1.4rem;
+}
 `
 
 export const ButtonProject = styled(Link)`

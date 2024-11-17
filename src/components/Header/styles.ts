@@ -2,18 +2,25 @@
 import styled from "styled-components";
 import Image from "next/image";
 
-export const Container = styled.header`
-position: relative;
+export type HeaderFixed = {
+    $isActive?: boolean
+}
+
+export const Container = styled.header<HeaderFixed>`
+position: sticky;
+top: 0;
+z-index: 100;
 
 background-color: ${({ theme }) => theme["gray-900"]};
-height: 90px;
+width: 100%;
 
 display: flex;
 align-items: center;
 justify-content: space-between;
 
-padding:10px 120px;
+padding: 20px 120px;
 box-shadow: 0px 4px 4px  rgba(0, 0, 0, 0.25);
+transition: position 0.3s ease-in-out; 
 
 @media (max-width: 1024px){
     padding: 10px 60px;

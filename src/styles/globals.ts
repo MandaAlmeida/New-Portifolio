@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body{
+    height: 100%;
     color: ${(props) => props.theme["gray-800"]};
     -webkit-font-smoothing: antialiased;
 }
@@ -21,5 +22,7 @@ body, input, textarea, button {
     font: 400 1.6rem 'Inter', sans-serif;
 }
 
-
+#__next {
+        height: 100%;
+    }
 `;

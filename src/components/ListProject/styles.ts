@@ -14,7 +14,7 @@ margin: 0 auto;
 margin-bottom: 62px;
 
 @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
 }
 
 

@@ -11,7 +11,6 @@ type Props = LinkProps & LinkTypeStyleProps & {
 export function CreateLink({ text, type = "PRIMARY", $isActive = false, ...rest }: Props) {
    const [activePage, setActivePage] = useState(false)
    const pathname = usePathname()
-   console.log(pathname)
 
    useEffect(() => {
       const normalizedPathname = pathname === '/' ? 'INICIO' : pathname.replace('/', '').toUpperCase();

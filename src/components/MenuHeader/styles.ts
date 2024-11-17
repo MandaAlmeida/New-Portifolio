@@ -38,6 +38,8 @@ export const ButtonMenu = styled.button`
     top: 50%;
     transform: translateY(-50%);
     right: 16px;
+
+    cursor: pointer;
 `
 
 export const CloseMenu = styled.button`
@@ -47,6 +49,8 @@ export const CloseMenu = styled.button`
     @media (max-width: 640px){
         width: 100%;
     }
+
+    cursor: pointer;
 `
 
 export const Icon = styled(List)`
