@@ -1,5 +1,5 @@
 import { Container, Logo } from "./styles";
-import logo from "../../../public/logo.png"
+import logo from "@/assets/logo.png"
 import { MenuHeader } from "../MenuHeader";
 
 export function Header() {

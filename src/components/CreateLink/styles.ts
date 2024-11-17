@@ -18,7 +18,7 @@ export const Text = styled(Link) <LinkTypeStyleProps>`
     font-weight: ${({ type }) => type === "PRIMARY" ? 700 : 400};
 
     &:hover{
-        color: ${({ theme, type }) => type === "PRIMARY" ? theme["blue-800"] : theme["gray-900"]};
+        color: ${({ theme }) => theme["blue-700"]};
     }
 
     &::after{
@@ -31,6 +31,6 @@ export const Text = styled(Link) <LinkTypeStyleProps>`
     }
 
     &:hover::after{
-        background-color: ${({ theme, type, $isActive }) => $isActive && type === "PRIMARY" ? theme["blue-700"] : "transparent"};
+        background-color: ${({ theme, $isActive }) => $isActive ? theme["blue-700"] : "transparent"};
     }
 `

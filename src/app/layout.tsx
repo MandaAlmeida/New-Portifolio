@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Head from "next/head";
 
 const inter = Inter({
   weight: "400",
@@ -11,6 +10,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: { template: "%s | Amanda Almeida", default: "Amanda Almeida" },
   description: "Saiba mais sobre minha trajetória e projetos! Vamos construir algo incrível juntos?",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -20,9 +22,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={inter.variable}>
-      <Head>
-        <link rel="icon" href="/logo.png" />
-      </Head>
       <body >
         {children}
       </body>
