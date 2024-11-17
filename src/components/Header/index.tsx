@@ -1,11 +1,11 @@
 import { Container, Logo } from "./styles";
-import eu from "@/assets/eu.png"
+import logo from "../../../public/logo.png"
 import { MenuHeader } from "../MenuHeader";
 
 export function Header() {
     return (
         <Container>
-            <Logo src={eu} alt="logo da pagina " />
+            <Logo src={logo} alt="logo da pagina " />
             <MenuHeader />
         </Container>
     )

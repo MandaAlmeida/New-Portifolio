@@ -13,7 +13,7 @@ type Props = {
 
 export const Container = styled.ul<Props>`
  display: ${({ type }) => type === "SECONDARY" ? "grid" : "flex"};
- grid-template-columns: repeat(2, 1fr);
+ grid-template-columns: repeat(2, 200px);
  flex-wrap: wrap;
  gap: ${({ type }) => type === "SECONDARY" ? 60 : 20}px;
  align-items: center;
