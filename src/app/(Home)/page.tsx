@@ -1,6 +1,6 @@
 import { ListProject } from "@/components/ListProject";
 import { GrupProjects } from "@/dados/projects";
-import ImageHome from "@/assets/imageHome.png";
+import ImageHome from "@/assets/projetos/imageHome.png";
 
 import { Container, ImageMain, Title, Text, ContainerText, SectionInitial, SectionProject, TextProject, ButtonProject } from "./styles";
 

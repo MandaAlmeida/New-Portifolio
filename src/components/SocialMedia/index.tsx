@@ -1,9 +1,9 @@
 import { ColorTypeStyleProps, Container, LinkList, LinkTypeStyleProps, List, Logo, Text } from "./styles";
 
-import github from "@/assets/github.png"
-import linkedin from "@/assets/linkedin.png"
-import Whatsapp from "@/assets/whatsApp.png"
-import Instagram from "@/assets/instagram.png"
+import github from "@/assets/socialMedia/github.png"
+import linkedin from "@/assets/socialMedia/linkedin.png"
+import Whatsapp from "@/assets/socialMedia/whatsApp.png"
+import Instagram from "@/assets/socialMedia/instagram.png"
 
 type Props = {
     type?: LinkTypeStyleProps;

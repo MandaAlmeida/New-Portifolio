@@ -1,5 +1,5 @@
 import { CardProjetType } from "@/components/CardProject";
-import Image from "@/assets/imageHome.png"
+import Image from "@/assets/projetos/imageHome.png"
 
 export const GrupProjects: CardProjetType[] = [
     {
