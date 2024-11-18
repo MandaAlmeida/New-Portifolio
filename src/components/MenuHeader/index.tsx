@@ -15,10 +15,10 @@ export function MenuHeader() {
             <ButtonMenu onClick={handleMenuMobile}><Icon /></ButtonMenu>
             <NavLink $isActiveMenu={activeMenu}>
                 <CloseMenu onClick={handleMenuMobile}><IconClose $isActiveMenu={activeMenu} /></CloseMenu>
-                <CreateLink text="Inicio" href="/" />
-                <CreateLink text="Sobre mim" href="/sobremim" />
-                <CreateLink text="Projetos" href="/projetos" />
-                <CreateLink text="Contato" href="/contato" />
+                <CreateLink text="Inicio" href="/" onClick={handleMenuMobile} />
+                <CreateLink text="Sobre mim" href="/sobremim" onClick={handleMenuMobile} />
+                <CreateLink text="Projetos" href="/projetos" onClick={handleMenuMobile} />
+                <CreateLink text="Contato" href="/contato" onClick={handleMenuMobile} />
             </NavLink>
         </>
     )

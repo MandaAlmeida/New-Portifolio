@@ -16,17 +16,13 @@ export function Email() {
             return;
         }
 
-        const KeyEmail = process.env.NEXT_PUBLIC_EMAIL_API_KEY!;
-        const KeyEmailTamplate = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE!;
-        const PublicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY!
-
         const templateParams = {
             from_name: name,
             message: message,
             email: email
         }
 
-        emailjs.send(KeyEmail, KeyEmailTamplate, templateParams, PublicKey).then((res) => {
+        emailjs.send("service_dexl5gz", "template_dc95nky", templateParams, "4aP3p_bP9U6A8HfXb").then((res) => {
             console.log("Email enviado", res.status, res.text)
             setName('')
             setMessage('')

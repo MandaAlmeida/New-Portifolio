@@ -32,6 +32,7 @@ max-height: 367px;
 
 @media (max-width: 640px){
     width: 90%;
+    max-width: 100%;
 }
 `
 
